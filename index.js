@@ -1,13 +1,11 @@
-function leapYear(year) {
+function sumOfFactorial(num) {
     let answer;
-    if (year % 4 === 0) {
-        if (year % 100 !== 0 || (year % 100 === 0 && year % 400 === 0)) {
-            answer = true;
-        } else {
-            answer = false;
-        }
-    } else {
-            answer = false;
+    let sum =0;
+    for (let i=1;i<=num;i++)
+    {
+        if (num%i==0)
+        sum = sum + i;
     }
-return answer
+  answer = sum;
+return answer; 
 }
